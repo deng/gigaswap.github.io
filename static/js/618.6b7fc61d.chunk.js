@@ -1,0 +1,327 @@
+"use strict";(self.webpackChunk_uniswap_interface=self.webpackChunk_uniswap_interface||[]).push([[618],{26017:function(e,t,n){n.r(t),n.d(t,{BAG_WIDTH:function(){return tu},XXXL_BAG_WIDTH:function(){return tp},default:function(){return tf}});var i,r,a,o,s=n(30575),d=n(45938),l=n(94869),c=n(66196),u=n(62069),p=n(45825),x=n(14099),g=n(34999),m=n(38414),h=n(83572),f=n(60476),I=n(25575),N=n(56823),_=n(2304),C=n(56008),T=n(80343),A=n(65647),y=n(48141),E=n(20216),w=n(25599),b=n(79954);(0,w.ZP)`
+  query NftUniversalRouterAddress($chain: Chain = ETHEREUM) {
+    nftRoute(chain: $chain, senderAddress: "", nftTrades: []) {
+      toAddress
+    }
+  }
+`;var v=n(96456),j=n(79741),O=n(95202),k=n(97901),P=n(79847),R=n(4572),S=n(98841),L=n(20691),z=n(39401),B=n(63505),$=n(83884),D=n(64803),F=n(69574),U=n(58336),H=n(14422),G=n(68044),W=n(57174);function M(e){return{action:z.lQ.Buy,marketplace:e.marketplace.toLowerCase(),amountIn:e.price.value,assetIn:{ETHPrice:e.price.value,baseAsset:e.price.currency,basePrice:e.price.value,baseDecimals:"18"},amountOut:e.amount.toString(),assetOut:{id:e.id,decimals:18,address:e.contractAddress,priceInfo:{ETHPrice:e.price.value,baseAsset:e.price.currency,basePrice:e.price.value,baseDecimals:"18"},tokenType:e.tokenType,tokenId:e.tokenId,amount:e.amount.toString(),marketplace:e.marketplace.toLowerCase(),orderSource:"api"}}}var V=n(26918),Z=n(22495),X=n(45239),q=n(98685),Y=n(64127);let K=(0,q.Ue)()((0,Y.mW)(e=>({inputCurrency:void 0,tokenTradeInput:void 0,setInputCurrency:t=>e(()=>({inputCurrency:t})),clearInputCurrency:()=>e(()=>({inputCurrency:void 0})),setTokenTradeInput:t=>e(()=>({tokenTradeInput:t}))}),{name:"useTokenInput"}));var J=n(53960);function Q(e){var t;return{inputAmount:{amount:(t={inputAmount:e.inputAmount,outputAmount:e.outputAmount}).inputAmount.quotient.toString(),token:{address:t.inputAmount.currency.isToken?t.inputAmount.currency.address:"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",chainId:t.inputAmount.currency.chainId,decimals:t.inputAmount.currency.decimals,isNative:t.inputAmount.currency.isNative}},outputAmount:{amount:t.outputAmount.quotient.toString(),token:{address:t.outputAmount.currency.isToken?t.outputAmount.currency.address:"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",chainId:t.outputAmount.currency.chainId,decimals:t.outputAmount.currency.decimals,isNative:t.outputAmount.currency.isNative}},pools:e.route.pools.map(e=>(function(e){let t="fee"in e;return{pair:t?void 0:{tokenAmountA:{amount:e.reserve0.quotient.toString(),token:{address:e.token0.address,chainId:e.token0.chainId,decimals:e.token0.decimals,isNative:e.token0.isNative}},tokenAmountB:{amount:e.reserve1.quotient.toString(),token:{address:e.token1.address,chainId:e.token1.chainId,decimals:e.token1.decimals,isNative:e.token1.isNative}}},pool:t?{fee:e.fee,liquidity:e.liquidity.toString(),sqrtRatioX96:e.sqrtRatioX96.toString(),tickCurrent:e.tickCurrent.toString(),tokenA:{address:e.token0.address,chainId:e.token0.chainId,decimals:e.token0.decimals,isNative:e.token0.isNative},tokenB:{address:e.token1.address,chainId:e.token1.chainId,decimals:e.token1.decimals,isNative:e.token1.isNative}}:void 0}})(e))}}var ee=n(12058),et=n(74969),en=n(8586),ei=n(50958),er=n(59801),ea=n(11276);function eo(e,t,n,i,r){let o={handleClick:()=>void 0,buttonText:(0,s.jsx)(d.cC,{id:"nwtY4N"}),disabled:!0,warningText:void 0,warningTextColor:t.accentWarning,helperText:void 0,helperTextColor:t.textSecondary,buttonColor:t.accentAction,buttonTextColor:t.accentTextLightPrimary},l={[a.WALLET_NOT_CONNECTED]:{...o,handleClick:n??(()=>void 0),disabled:!1,buttonText:(0,s.jsx)(d.cC,{id:"VHOVEJ"})},[a.NOT_SUPPORTED_CHAIN]:{...o,handleClick:n??(()=>void 0),buttonText:(0,s.jsx)(d.cC,{id:"ffOtfc"}),disabled:!1,warningText:(0,s.jsx)(d.cC,{id:"IwI0rY"})},[a.INSUFFICIENT_BALANCE]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"4fL/V7"}),warningText:(0,s.jsx)(d.cC,{id:"cPcTW+"})},[a.ERROR]:{...o,warningText:(0,s.jsx)(d.cC,{id:"fWsBTs"})},[a.IN_WALLET_CONFIRMATION]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"CpEYLQ"})},[a.PROCESSING_TRANSACTION]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"SqYgw0"})},[a.FETCHING_TOKEN_ROUTE]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"YyaKjU"})},[a.INVALID_TOKEN_ROUTE]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"4fL/V7"})},[a.NO_TOKEN_ROUTE_FOUND]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"dLAScn"}),buttonColor:t.backgroundInteractive,buttonTextColor:t.textPrimary,helperText:(0,s.jsx)(d.cC,{id:"1u70J/"})},[a.LOADING_ALLOWANCE]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"Rs3IwW"})},[a.IN_WALLET_ALLOWANCE_APPROVAL]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"4k/lBP"})},[a.PROCESSING_APPROVAL]:{...o,buttonText:(0,s.jsx)(d.cC,{id:"gHko4n"})},[a.REQUIRE_APPROVAL]:{...o,disabled:!1,handleClick:n??(()=>void 0),helperText:(0,s.jsx)(d.cC,{id:"kpa6xe"}),buttonText:(0,s.jsx)(d.cC,{id:"Z7ZXbT"})},[a.CONFIRM_UPDATED_PRICE]:{...o,handleClick:n??(()=>void 0),disabled:!1,warningTextColor:t.accentAction,warningText:(0,s.jsx)(d.cC,{id:"Ejd0wH"}),buttonText:(0,s.jsx)(d.cC,{id:"4fL/V7"})},[a.PRICE_IMPACT_HIGH]:{...o,handleClick:n??(()=>void 0),disabled:!1,buttonColor:r?r.priceImpactSeverity.color:o.buttonColor,helperText:(0,s.jsx)(d.cC,{id:"NF0esC"}),helperTextColor:r?r.priceImpactSeverity.color:o.helperTextColor,buttonText:(0,s.jsx)(d.cC,{id:"2AEplS"})},[a.PAY]:{...o,handleClick:n??(()=>void 0),disabled:!1,buttonText:(0,s.jsx)(d.cC,{id:"4fL/V7"}),helperText:i?(0,s.jsx)(d.cC,{id:"3BWxOM"}):void 0}};return l[e]}(i=a||(a={}))[i.WALLET_NOT_CONNECTED=0]="WALLET_NOT_CONNECTED",i[i.NOT_SUPPORTED_CHAIN=1]="NOT_SUPPORTED_CHAIN",i[i.INSUFFICIENT_BALANCE=2]="INSUFFICIENT_BALANCE",i[i.ERROR=3]="ERROR",i[i.IN_WALLET_CONFIRMATION=4]="IN_WALLET_CONFIRMATION",i[i.PROCESSING_TRANSACTION=5]="PROCESSING_TRANSACTION",i[i.FETCHING_TOKEN_ROUTE=6]="FETCHING_TOKEN_ROUTE",i[i.INVALID_TOKEN_ROUTE=7]="INVALID_TOKEN_ROUTE",i[i.NO_TOKEN_ROUTE_FOUND=8]="NO_TOKEN_ROUTE_FOUND",i[i.LOADING_ALLOWANCE=9]="LOADING_ALLOWANCE",i[i.IN_WALLET_ALLOWANCE_APPROVAL=10]="IN_WALLET_ALLOWANCE_APPROVAL",i[i.PROCESSING_APPROVAL=11]="PROCESSING_APPROVAL",i[i.REQUIRE_APPROVAL=12]="REQUIRE_APPROVAL",i[i.CONFIRM_UPDATED_PRICE=13]="CONFIRM_UPDATED_PRICE",i[i.PRICE_IMPACT_HIGH=14]="PRICE_IMPACT_HIGH",i[i.PAY=15]="PAY";let es=ee.default.div.withConfig({displayName:"BagFooter__FooterContainer",componentId:"sc-2ece965-0"})`
+  padding: 0px 12px;
+`,ed=ee.default.div.withConfig({displayName:"BagFooter__Footer",componentId:"sc-2ece965-1"})`
+  border-top: 1px solid ${({theme:e})=>e.backgroundOutline};
+  color: ${({theme:e})=>e.textPrimary};
+  display: flex;
+  flex-direction: column;
+  margin: 0px 16px 8px;
+  padding: 12px 0px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+`,el=(0,ee.default)(f.ZP).withConfig({displayName:"BagFooter__FooterHeader",componentId:"sc-2ece965-2"})`
+  padding-top: 8px;
+  padding-bottom: 16px;
+`,ec=(0,ee.default)(_.ZP).withConfig({displayName:"BagFooter__CurrencyRow",componentId:"sc-2ece965-3"})`
+  justify-content: space-between;
+  align-items: start;
+  gap: 8px;
+`,eu=(0,ee.default)(f.ZP).withConfig({displayName:"BagFooter__TotalColumn",componentId:"sc-2ece965-4"})`
+  text-align: end;
+  overflow-x: hidden;
+`,ep=(0,ee.default)(ei.Z).withConfig({displayName:"BagFooter__WarningIcon",componentId:"sc-2ece965-5"})`
+  width: 14px;
+  margin-right: 4px;
+  color: inherit;
+`,ex=(0,ee.default)(ea.Tv.BodyPrimary).withConfig({displayName:"BagFooter__WarningText",componentId:"sc-2ece965-6"})`
+  align-items: center;
+  color: ${({$color:e})=>e};
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px !important;
+  text-align: center;
+`,eg=(0,ee.default)(ea.Tv.Caption).withConfig({displayName:"BagFooter__HelperText",componentId:"sc-2ece965-7"})`
+  color: ${({$color:e})=>e};
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px !important;
+`,em=(0,ee.default)(_.ZP).withConfig({displayName:"BagFooter__CurrencyInput",componentId:"sc-2ece965-8"})`
+  gap: 8px;
+  cursor: pointer;
+`,eh=ee.default.button.withConfig({displayName:"BagFooter__ActionButton",componentId:"sc-2ece965-9"})`
+  display: flex;
+  background: ${({$backgroundColor:e})=>e};
+  color: ${({$color:e})=>e};
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  gap: 16px;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0px;
+  cursor: pointer;
+  align-items: center;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: auto;
+  }
+`,ef=(0,ee.default)(T.X).withConfig({displayName:"BagFooter__FiatLoadingBubble",componentId:"sc-2ece965-10"})`
+  border-radius: 4px;
+  width: 4rem;
+  height: 20px;
+  align-self: end;
+`,eI=(0,ee.default)(_.ZP).withConfig({displayName:"BagFooter__PriceImpactContainer",componentId:"sc-2ece965-11"})`
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: flex-end;
+`,eN=(0,ee.default)(_.ZP).withConfig({displayName:"BagFooter__PriceImpactRow",componentId:"sc-2ece965-12"})`
+  align-items: center;
+  gap: 8px;
+`,e_=(0,ee.default)(ea.Tv.BodyPrimary).withConfig({displayName:"BagFooter__ValueText",componentId:"sc-2ece965-13"})`
+  line-height: 20px;
+  font-weight: 500;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`,eC=({color:e,children:t})=>t?(0,s.jsxs)(ex,{"data-testid":"nft-buy-button-warning",fontSize:"14px",lineHeight:"20px",$color:e,children:[(0,s.jsx)(ep,{}),t]}):null,eT=({children:e,color:t})=>e?(0,s.jsx)(eg,{lineHeight:"16px",$color:t,children:e}):null,eA=({usingPayWithAnyToken:e,totalEthPrice:t,activeCurrency:n,tradeState:i,trade:r})=>e?i!==F.qx.LOADING||r?(0,s.jsx)(e_,{color:i===F.qx.LOADING?"textTertiary":"textPrimary",children:(0,H.Nd)(r?.inputAmount.toExact())}):(0,s.jsx)(ea.Tv.BodyPrimary,{color:"textTertiary",lineHeight:"20px",fontWeight:"500",children:(0,s.jsx)(d.cC,{id:"hwuHLB"})}):(0,s.jsxs)(ea.Tv.BodyPrimary,{lineHeight:"20px",fontWeight:"500",children:[(0,H.zb)(t.toString()),"\xa0",n?.symbol??"ETH"]}),ey=({usdcValue:e,priceImpact:t,tradeState:n,usingPayWithAnyToken:i})=>e?(0,s.jsxs)(eI,{children:[t&&(0,s.jsx)(s.Fragment,{children:(0,s.jsx)(A.ud,{text:x.ag._({id:"KaCkzz"}),children:(0,s.jsxs)(eN,{children:[(0,s.jsx)(ei.Z,{color:t.priceImpactSeverity.color,size:"16px"}),(0,s.jsxs)(ea.Tv.BodySmall,{style:{color:t.priceImpactSeverity.color},lineHeight:"20px",children:["(",(0,s.jsx)(d.cC,{id:"J/hVSQ",values:{0:t.displayPercentage()}}),")"]})]})})}),(0,s.jsx)(ea.Tv.BodySmall,{color:"textTertiary",lineHeight:"20px",children:`${(0,H.Nd)(e?.toExact(),!0)}`})]}):i&&(n===F.qx.INVALID||n===F.qx.NO_ROUTE_FOUND)?null:(0,s.jsx)(ef,{}),eE=[z.s.FETCHING_ROUTE,z.s.CONFIRMING_IN_WALLET,z.s.FETCHING_FINAL_ROUTE,z.s.PROCESSING_TRANSACTION],ew=({setModalIsOpen:e,eventProperties:t})=>{let n=(0,h.LK)(),i=(0,ee.useTheme)(),{account:r,chainId:o,connector:u}=(0,m.useWeb3React)(),x=!!(r&&o),_=function(){let e=(0,S.c)(e=>e.itemsInBag);return(0,B.useMemo)(()=>{let t=e.reduce((e,t)=>t.status!==z.ZJ.UNAVAILABLE?e.add(L.O$.from(t.asset.updatedPriceInfo?t.asset.updatedPriceInfo.ETHPrice:t.asset.priceInfo.ETHPrice)):e,L.O$.from(0));return t},[e])}(),{inputCurrency:T}=K(({inputCurrency:e})=>({inputCurrency:e}),V.X),A=K(e=>e.setInputCurrency),w=(0,v.U8)("ETH"),q=(0,P.mM)(r??void 0,T&&T.isToken?T:void 0),{isLocked:Y,bagStatus:ei,setBagExpanded:ep,setBagStatus:ex}=(0,S.c)(({isLocked:e,bagStatus:t,setBagExpanded:n,setBagStatus:i})=>({isLocked:e,bagStatus:t,setBagExpanded:n,setBagStatus:i}),V.X),[eg,ef]=(0,B.useState)(!1),eI=eE.includes(ei),eN=T??w,e_=!!T&&o===g.ChainId.MAINNET,{universalRouterAddress:ew,universalRouterAddressIsLoading:eb}=function(){let{data:e,loading:t}=(0,b.Z6)({fetchPolicy:"no-cache"});return{universalRouterAddress:e?.nftRoute?.toAddress,universalRouterAddressIsLoading:t}}();!function(e){let t=(0,Z.p)(e=>e.state),n=(0,Z.p)(e=>e.setState),i=(0,B.useRef)(t),{setBagStatus:r,setLocked:a}=(0,S.c)(({setBagExpanded:e,setBagStatus:t,setLocked:n})=>({setBagExpanded:e,setBagStatus:t,setLocked:n}),V.X);(0,B.useEffect)(()=>{Z.p.subscribe(e=>i.current=e.state)},[]),(0,B.useEffect)(()=>{i.current===z.c$.Confirming&&r(z.s.PROCESSING_TRANSACTION),(i.current===z.c$.Denied||i.current===z.c$.Invalid)&&(i.current===z.c$.Invalid?r(z.s.WARNING):r(z.s.CONFIRM_REVIEW),n(z.c$.New),a(!1),e(!1))},[a,r,e,n,i.current])}(e);let ev=function(){let{account:e}=(0,m.useWeb3React)(),{itemsInBag:t,setBagStatus:n,didOpenUnavailableAssets:i,setDidOpenUnavailableAssets:r,isLocked:a,setLocked:o,setItemsInBag:s}=(0,S.c)(({itemsInBag:e,setBagStatus:t,didOpenUnavailableAssets:n,setDidOpenUnavailableAssets:i,isLocked:r,setLocked:a,setItemsInBag:o})=>({itemsInBag:e,setBagStatus:t,didOpenUnavailableAssets:n,setDidOpenUnavailableAssets:i,isLocked:r,setLocked:a,setItemsInBag:o}),V.X),d=K(e=>e.tokenTradeInput),l=(0,B.useMemo)(()=>(0,H.G7)(t),[t]),[c]=(0,b.yo)(),u=function(){let{provider:e}=(0,m.useWeb3React)(),t=(0,Z.p)(e=>e.sendTransaction),n=(0,X.J)(e=>e.setTransactionResponse),{setLocked:i,setBagExpanded:r,reset:a}=(0,S.c)(({setLocked:e,setBagExpanded:t,reset:n})=>({setLocked:e,setBagExpanded:t,reset:n}),V.X);return(0,B.useCallback)(async(o,s,d=!1)=>{if(!e)return;let l=await t(e.getSigner(),s,o,d);l&&(i(!1),n(l),r({bagExpanded:!1}),a())},[e,a,t,r,i,n])}(),p=(0,B.useCallback)(()=>{i&&r(!1),a||o(!0),n(z.s.FETCHING_ROUTE)},[a,i,o,n,r]);return(0,B.useCallback)(async()=>{p(),c({variables:{senderAddress:e||"",nftTrades:(0,H.hI)(l),tokenTrades:d||void 0},onCompleted:e=>{if(!e.nftRoute||!e.nftRoute.route){n(z.s.ADDING_TO_BAG),o(!1);return}let t=l.filter(e=>e.status!==z.ZJ.UNAVAILABLE).map(e=>e.asset),i=!!d,{route:r,routeResponse:a}=function(e,t){let n=e.route?e.route.map(M):[];return{route:n,routeResponse:{route:n,valueToSend:t?void 0:e.sendAmount.value,data:e.calldata,to:e.toAddress}}}(e.nftRoute,i),{newBagItems:c,nextBagStatus:p}=function(e,t,n){let{hasPriceAdjustment:i,updatedAssets:r}=(0,G.$)(e,t),{unchanged:a,priceChanged:o,unavailable:s}=(0,W.Kr)(r),d=r.length>0,l=o.length>0,c=s.length>0,u=[...s.map(e=>({asset:e,status:z.ZJ.UNAVAILABLE})),...o.map(e=>({asset:e,status:z.ZJ.REVIEWING_PRICE_CHANGE})),...a.map(e=>({asset:e,status:z.ZJ.REVIEWED}))],p=d?l||c?l?z.s.IN_REVIEW:z.s.CONFIRM_REVIEW:i&&n?z.s.CONFIRM_QUOTE:z.s.CONFIRMING_IN_WALLET:z.s.ADDING_TO_BAG;return{newBagItems:u,nextBagStatus:p}}(t,r,i);if(s(c),n(p),p===z.s.CONFIRMING_IN_WALLET){u(a,t,i),o(!0);return}o(!1)}})},[e,c,l,u,p,o,n,s,d])}(),ej=(0,B.useMemo)(()=>(0,R.Z)((0,p.formatEther)(_.toString()),w??void 0),[w,_]),{state:eO,trade:ek,maximumAmountIn:eP,allowedSlippage:eR}=function(e,t){let{state:n,trade:i}=(0,D.C)(g.TradeType.EXACT_OUTPUT,t,e??void 0,F.R5.API),r=(0,$.Z)((0,U.pG)(i)?i:void 0),a=(0,B.useMemo)(()=>{let e=i?.maximumAmountIn(r);return e?.currency.isToken?e:void 0},[r,i]);return(0,B.useMemo)(()=>({state:n,trade:i,maximumAmountIn:a,allowedSlippage:r}),[r,a,n,i])}(e_?T:void 0,ej),eS=(0,j.Z)(eP,function(e,t){if(e)return e===g.ChainId.MAINNET?t??(0,E.UNIVERSAL_ROUTER_ADDRESS)(e):(0,y.EC)(e)?(0,E.UNIVERSAL_ROUTER_ADDRESS)(e):void 0}(o,ew),F.d7.Classic),eL=eS.state===j.K.LOADING||eb;!function(e,t,n){let i=K(e=>e.setTokenTradeInput),r=(0,U.pG)(e)&&e.routes,a=!!e&&!!e.inputAmount&&e.inputAmount.currency.isToken,o=!!n&&!!t;(0,B.useEffect)(()=>{if(!r||!a||!o){i(void 0);return}let s=parseInt(n.multiply(100).toSignificant(2)),{mixedTokenTradeRouteInputs:d,v2TokenTradeRouteInputs:l,v3TokenTradeRouteInputs:c}=function(e){let t=[],n=[],i=[],r=e.swaps;for(let e of r)e.route.protocol===J.Protocol.MIXED?t.push(Q(e)):e.route.protocol===J.Protocol.V2?n.push(Q(e)):i.push(Q(e));return{mixedTokenTradeRouteInputs:t.length>0?t:void 0,v2TokenTradeRouteInputs:n.length>0?n:void 0,v3TokenTradeRouteInputs:i.length>0?i:void 0}}(e),u={mixedRoutes:d,tradeType:b.NS.ExactOutput,v2Routes:l,v3Routes:c},p="permitSignature"in t&&t.permitSignature?{details:{amount:t.permitSignature.details.amount.toString(),expiration:t.permitSignature.details.expiration.toString(),nonce:t.permitSignature.details.nonce.toString(),token:t.permitSignature.details.token},sigDeadline:t.permitSignature.sigDeadline.toString(),signature:t.permitSignature.signature,spender:t.permitSignature.spender}:void 0;i({permit:p,routes:u,slippageToleranceBasisPoints:s,tokenAmount:{amount:e.inputAmount.quotient.toString(),token:{address:e.inputAmount.currency.address,chainId:e.inputAmount.currency.chainId,decimals:e.inputAmount.currency.decimals,isNative:e.inputAmount.currency.isNative}}})},[t,n,o,a,r,i,e])}(ek,eS,eR);let ez=function(e){let t=(0,ee.useTheme)();return(0,B.useMemo)(()=>{let n=e?(0,et.QW)(e):void 0,i=n?(0,et.BK)(n):void 0,r="error"===i?t.accentCritical:"warning"===i?t.accentWarning:void 0;return n&&i&&r?{priceImpactSeverity:{type:i,color:r},displayPercentage:()=>(function(e){let t=e.lessThan(0)?"+":"",n=Number(e.numerator)/Number(e.denominator)*100;if(n<.005)return"0.00%";let i=parseFloat(e.multiply(-1)?.toFixed(2));return`${t}${i}%`})(n)}:void 0},[t.accentCritical,t.accentWarning,e])}(ek),eB=(0,O.sq)(ek?.inputAmount),e$=(0,O.sq)(ej),eD=e_?eB:e$,{balance:eF}=(0,en.t)(),eU=(0,B.useMemo)(()=>{if(x&&o===g.ChainId.MAINNET){if(T){let e=ek?.inputAmount;if(!q||!e)return;return!q.lessThan(e)}return(0,p.parseEther)(eF).gte(_)}},[x,o,T,eF,_,ek?.inputAmount,q]);(0,B.useEffect)(()=>{ex(z.s.ADDING_TO_BAG)},[T,ex]);let eH=(0,k.o)(),{buttonText:eG,buttonTextColor:eW,disabled:eM,warningText:eV,warningTextColor:eZ,helperText:eX,helperTextColor:eq,handleClick:eY,buttonColor:eK}=(0,B.useMemo)(()=>{if(x&&o!==g.ChainId.MAINNET)return eo(a.NOT_SUPPORTED_CHAIN,i,()=>eH(u,g.ChainId.MAINNET));if(!1===eU)return eo(a.INSUFFICIENT_BALANCE,i);if(ei===z.s.WARNING)return eo(a.ERROR,i);if(!x)return eo(a.WALLET_NOT_CONNECTED,i,()=>{n(),ep({bagExpanded:!1})});if(ei===z.s.FETCHING_FINAL_ROUTE||ei===z.s.CONFIRMING_IN_WALLET)return eo(a.IN_WALLET_CONFIRMATION,i);if(ei===z.s.PROCESSING_TRANSACTION)return eo(a.PROCESSING_TRANSACTION,i);if(e_&&eO!==F.qx.VALID)return eO===F.qx.INVALID?eo(a.INVALID_TOKEN_ROUTE,i):eO===F.qx.NO_ROUTE_FOUND?eo(a.NO_TOKEN_ROUTE_FOUND,i):eo(a.FETCHING_TOKEN_ROUTE,i);let e=eS.state===j.K.REQUIRED,t=()=>e&&eS.approveAndPermit();return eL?eo(a.LOADING_ALLOWANCE,i,t):e?eS.isApprovalPending?eo(a.IN_WALLET_ALLOWANCE_APPROVAL,i,t):eS.isApprovalLoading?eo(a.PROCESSING_APPROVAL,i,t):eo(a.REQUIRE_APPROVAL,i,t):ei===z.s.CONFIRM_QUOTE?eo(a.CONFIRM_UPDATED_PRICE,i,ev):ez&&"error"===ez.priceImpactSeverity.type?eo(a.PRICE_IMPACT_HIGH,i,ev,e_,ez):eo(a.PAY,i,ev,e_)},[x,o,eU,ei,e_,eO,eL,eS,ez,i,ev,eH,u,n,ep]),eJ={usd_value:eD?.toExact(),using_erc20:!!T,...t};return(0,s.jsxs)(es,{children:[(0,s.jsxs)(ed,{children:[(0,s.jsxs)(el,{gap:"xs",children:[(0,s.jsxs)(ec,{children:[(0,s.jsx)(f.ZP,{gap:"xs",children:(0,y.EC)(o)&&(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)(ea.Tv.SubHeaderSmall,{children:(0,s.jsx)(d.cC,{id:"JQjhrO"})}),(0,s.jsxs)(em,{onClick:()=>{Y||(ef(!0),(0,c._P)(l.Yz.NFT_BUY_TOKEN_SELECTOR_CLICKED))},children:[(0,s.jsx)(N.Z,{currency:eN,size:"24px"}),(0,s.jsx)(ea.Tv.HeadlineSmall,{fontWeight:500,lineHeight:"24px",children:eN?.symbol}),(0,s.jsx)(er.Z,{size:20,color:i.textSecondary})]})]})}),(0,s.jsxs)(eu,{gap:"xs",children:[(0,s.jsx)(ea.Tv.SubHeaderSmall,{marginBottom:"4px",children:(0,s.jsx)(d.cC,{id:"72c5Qo"})}),(0,s.jsx)(eA,{usingPayWithAnyToken:e_,totalEthPrice:_,activeCurrency:eN,tradeState:eO,trade:ek})]})]}),(0,s.jsx)(ey,{usdcValue:eD,priceImpact:ez,tradeState:eO,usingPayWithAnyToken:e_})]}),(0,s.jsxs)(c.M8,{events:[l.TM.onClick],name:l.Yz.NFT_BUY_BAG_PAY,element:l.xo.NFT_BUY_BAG_PAY_BUTTON,properties:{...eJ},shouldLogImpression:x&&!eM,children:[(0,s.jsx)(eC,{color:eZ,children:eV}),(0,s.jsx)(eT,{color:eq,children:eX}),(0,s.jsxs)(eh,{"data-testid":"nft-buy-button",onClick:eY,disabled:eM||eI,$backgroundColor:eK,$color:eW,children:[eI&&(0,s.jsx)(I.ZP,{size:"20px",stroke:"white"}),eG]})]})]}),(0,s.jsx)(C.Z,{isOpen:eg,onDismiss:()=>ef(!1),onCurrencySelect:e=>{A(e.isNative?void 0:e),e.isToken&&(0,c._P)(l.Yz.NFT_BUY_TOKEN_SELECTED,{token_address:e.address,token_symbol:e.symbol})},selectedCurrency:eN??void 0,onlyShowCurrenciesWithBalance:!0})]})};var eb=n(64709),ev=n(9867),ej=n(2994),eO=n(54212),ek=n(47615),eP=n(437);n(11173);var eR=n(84893),eS=n(60198);let eL=(0,ee.keyframes)`
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+`,ez=ee.default.circle.withConfig({displayName:"TimedLoader__Circle",componentId:"sc-9c2e484f-0"})`
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  -webkit-animation: ${eL} linear;
+  animation: ${eL} linear;
+  animation-duration: 160s;
+  stroke: ${({theme:e})=>e.accentAction};
+`,eB=()=>(0,s.jsx)(eb.n,{display:"flex",position:"absolute",children:(0,s.jsx)("svg",{height:"18px",width:"18px",children:(0,s.jsx)(ez,{strokeWidth:"1.5",strokeLinecap:"round",style:{transform:"rotate(90deg)",transformOrigin:"50% 50%"},fill:"transparent",r:"8px",cx:"9px",cy:"9px"})})});var e$=n(62878);let eD=ee.default.div.withConfig({displayName:"media__StyledImageContainer",componentId:"sc-da753e94-0"})`
+  position: relative;
+  pointer-events: auto;
+  &:hover {
+    opacity: ${({isDisabled:e,theme:t})=>e?t.opacity.disabled:t.opacity.enabled};
+  }
+  cursor: ${({isDisabled:e})=>e?"default":"pointer"};
+`;(0,ee.default)(_.ZP).withConfig({displayName:"media__StyledMediaContainer",componentId:"sc-da753e94-1"})`
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+`,ee.default.img.withConfig({displayName:"media__StyledImage",componentId:"sc-da753e94-2"})`
+  width: 100%;
+  aspect-ratio: ${({$aspectRatio:e})=>e};
+  transition: ${({theme:e})=>`${e.transition.duration.medium} ${e.transition.timing.ease} transform`};
+  will-change: transform;
+  object-fit: contain;
+  visibility: ${({$hidden:e})=>e?"hidden":"visible"};
+  background: ${({theme:e,imageLoading:t})=>t&&`linear-gradient(270deg, ${e.backgroundOutline} 0%, ${e.backgroundSurface} 100%)`};
+`,ee.default.div.withConfig({displayName:"media__PlaybackButton",componentId:"sc-da753e94-3"})`
+  display: ${({pauseButton:e})=>e?"block":"none"};
+  color: ${({theme:e})=>e.accentAction};
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin-left: calc(100% - 50px);
+  transform: translateY(-76px);
+
+  @media screen and (max-width: ${ea.j$.sm}px) {
+    display: block;
+  }
+
+  ${eD}:hover & {
+    display: block;
+  }
+`,ee.default.video.withConfig({displayName:"media__StyledVideo",componentId:"sc-da753e94-4"})`
+  width: 100%;
+  aspect-ratio: ${({$aspectRatio:e})=>e};
+`,(0,ee.default)(_.ZP).withConfig({displayName:"media__StyledInnerMediaContainer",componentId:"sc-da753e94-5"})`
+  position: absolute;
+  left: 0px;
+  top: 0px;
+`,ee.default.audio.withConfig({displayName:"media__StyledAudio",componentId:"sc-da753e94-6"})`
+  width: 100%;
+  height: 100%;
+`,ee.default.div.withConfig({displayName:"media__NoContentContainerBackground",componentId:"sc-da753e94-7"})`
+  position: relative;
+  width: 100%;
+  height: ${({$height:e})=>e?`${e}px`:"auto"};
+  padding-top: 100%;
+  background: ${({theme:e})=>`linear-gradient(90deg, ${e.backgroundSurface} 0%, ${e.backgroundInteractive} 95.83%)`};
+`,(0,ee.default)(ea.Tv.BodyPrimary).withConfig({displayName:"media__NoContentText",componentId:"sc-da753e94-8"})`
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  color: ${e$.O9.gray500};
+`;var eF=n(26030);(r=o||(o={}))[r.Image=0]="Image",r[r.Video=1]="Video",r[r.Audio=2]="Audio",ee.default.div.withConfig({displayName:"icons__StyledMarketplaceContainer",componentId:"sc-10a3df04-0"})`
+  position: absolute;
+  display: flex;
+  top: 12px;
+  left: 12px;
+  height: 32px;
+  width: ${({isText:e})=>e?"auto":"32px"};
+  padding: ${({isText:e})=>e?"0px 8px":"0px"};
+  background: rgba(93, 103, 133, 0.24);
+  color: ${({theme:e})=>e.accentTextLightPrimary};
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  z-index: 2;
+`,(0,ee.default)(_.ZP).withConfig({displayName:"icons__ListPriceRowContainer",componentId:"sc-10a3df04-1"})`
+  gap: 6px;
+  color: ${({theme:e})=>e.accentTextLightPrimary};
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-shadow: 1px 1px 3px rgba(51, 53, 72, 0.54);
+`;let eU=(0,ee.default)(ei.Z).withConfig({displayName:"icons__SuspiciousIcon",componentId:"sc-10a3df04-2"})`
+  width: 16px;
+  height: 16px;
+  color: ${({theme:e})=>e.accentFailure};
+`;(0,ee.default)(_.ZP).withConfig({displayName:"icons__RarityLogoContainer",componentId:"sc-10a3df04-3"})`
+  margin-right: 8px;
+  width: 16px;
+`,(0,ee.default)(ea.Tv.BodySmall).withConfig({displayName:"icons__RarityText",componentId:"sc-10a3df04-4"})`
+  display: flex;
+`,(0,ee.default)(ea.Tv.Caption).withConfig({displayName:"icons__RarityInfo",componentId:"sc-10a3df04-5"})`
+  flex-shrink: 0;
+  color: ${({theme:e})=>e.textSecondary};
+  background: ${({theme:e})=>e.backgroundInteractive};
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: 700 !important;
+  line-height: 12px;
+  text-align: right;
+  cursor: pointer;
+`;let eH=(0,ee.default)(_.ZP).withConfig({displayName:"icons__SuspiciousIconContainer",componentId:"sc-10a3df04-6"})`
+  flex-shrink: 0;
+`,eG=()=>(0,s.jsx)(A.ud,{text:(0,s.jsx)(ea.Tv.BodySmall,{children:(0,s.jsx)(d.cC,{id:"E7U2ed"})}),placement:"top",children:(0,s.jsx)(eH,{children:(0,s.jsx)(eU,{})})});var eW=n(15655),eM=n(11001);n(54616);var eV="_1kuawcb rgw6ezb4 rgw6ezcy rgw6ez7pi rgw6ez45y rgw6ez45s",eZ="_1kuawc1 rgw6ez2dy rgw6ez2jg rgw6ez2om rgw6ez284 rgw6ez4em rgw6ez3tm rgw6ez7d2 rgw6ez1dy rgw6ez7em",eX="rgw6ez14g rgw6ez1bg rgw6ez49s rgw6ez7ee",eq="rgw6ezcs rgw6ezay rgw6ezea rgw6ez7pi rgw6ez45s rgw6ez45y rgw6ez4ey",eY="_1kuawc7",eK="rgw6ez3xy";let eJ=(0,ee.default)(eS.UH).withConfig({displayName:"BagRow__RemoveButton",componentId:"sc-8d05d09e-0"})`
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 16px;
+  padding: 12px 14px;
+`,eQ=(0,ee.default)(eS.UH).withConfig({displayName:"BagRow__ReviewButton",componentId:"sc-8d05d09e-1"})`
+  border-radius: 12px;
+  flex: 1 1 auto;
+  font-size: 14px;
+  padding: 8px;
+  width: 50%;
+`,e0=ee.default.div.withConfig({displayName:"BagRow__RemoveAssetOverlay",componentId:"sc-8d05d09e-2"})`
+  position: absolute;
+  display: block;
+  right: -11px;
+  top: -11px;
+  z-index: 1;
+  transition: 250ms;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`,e1=({onClick:e})=>(0,s.jsx)(e0,{onClick:e,children:(0,s.jsx)(eF.Xv,{})}),e6=()=>(0,s.jsx)(eb.n,{position:"relative",background:"loadingBackground",className:eX,children:(0,s.jsxs)(eb.n,{position:"absolute",textAlign:"center",left:"1/2",top:"1/2",style:{transform:"translate3d(-50%, -50%, 0)"},color:"gray500",fontSize:"12",fontWeight:"normal",children:["Image",(0,s.jsx)("br",{}),"not",(0,s.jsx)("br",{}),"available"]})}),e2=({asset:e,usdPrice:t,removeAsset:n,showRemove:i,grayscale:r,isMobile:a})=>{let[o,d]=(0,B.useState)(!1),[l,c]=(0,B.useState)(!e.smallImageUrl),[u,x]=(0,B.useState)(!1),g=(0,B.useCallback)(()=>x(!0),[]),m=(0,B.useCallback)(()=>x(!1),[]),h=!!(i&&u&&!a),f=e.updatedPriceInfo?e.updatedPriceInfo.ETHPrice:e.priceInfo.ETHPrice,I=(0,H.zb)(f),N=(0,H.Nd)(t?parseFloat((0,p.formatEther)(f))*t:t,!0),_=(0,B.useCallback)(t=>{t.preventDefault(),t.stopPropagation(),n([e])},[e,n]);return(0,s.jsx)(eM.rU,{to:(0,H.PZ)(e),style:{textDecoration:"none"},children:(0,s.jsxs)(ej.X2,{className:eZ,onMouseEnter:g,onMouseLeave:m,children:[(0,s.jsxs)(eb.n,{position:"relative",display:"flex",children:[i&&a&&(0,s.jsx)(e1,{onClick:_}),!l&&(0,s.jsx)(eb.n,{as:"img",src:e.smallImageUrl,alt:e.name,className:(0,eR.default)(eX,r&&!u&&eY),onLoad:()=>{d(!0)},onError:()=>{c(!0)},visibility:o?"visible":"hidden"}),!o&&(0,s.jsx)(eb.n,{position:"absolute",className:`${eX} _2kdvfw1`}),l&&(0,s.jsx)(e6,{})]}),(0,s.jsxs)(ej.sg,{overflow:"hidden",width:"full",color:r?"textSecondary":"textPrimary",children:[(0,s.jsxs)(ej.X2,{overflow:"hidden",width:"full",whiteSpace:"nowrap",children:[(0,s.jsx)(eb.n,{className:eV,children:e.name??`#${e.tokenId}`}),e.susFlag&&(0,s.jsx)(eG,{})]}),(0,s.jsxs)(ej.X2,{overflow:"hidden",whiteSpace:"nowrap",gap:"2",children:[(0,s.jsx)(eb.n,{className:eq,children:e.collectionName}),e.collectionIsVerified&&(0,s.jsx)(eF.SA,{className:eK})]})]}),h&&(0,s.jsx)(eJ,{onClick:_,emphasis:eS.eI.medium,size:eS.qE.medium,children:"Remove"}),(!h||a)&&(0,s.jsxs)(ej.sg,{flexShrink:"0",alignItems:"flex-end",children:[(0,s.jsxs)(eb.n,{className:"_1kuawc9 rgw6ez3sy rgw6ezb4 rgw6ezd4 rgw6ez3xy",children:[I,"\xa0ETH"]}),(0,s.jsx)(eb.n,{className:eq,children:N})]})]})})},e4=({asset:e,usdPrice:t,markAssetAsReviewed:n,top:i,isMobile:r})=>{let a=L.O$.from(e.updatedPriceInfo?.ETHPrice).gt(L.O$.from(e.priceInfo.ETHPrice)),o=(0,B.useCallback)(t=>{t.preventDefault(),t.stopPropagation(),n(e,!1)},[e,n]),d=(0,B.useCallback)(t=>{t.preventDefault(),t.stopPropagation(),n(e,!0)},[e,n]);return(0,s.jsxs)(ej.sg,{className:"rgw6ez2pa rgw6ez28s rgw6ezlm rgw6ezr4 rgw6ez4t4 rgw6ez3ta rgw6ez4em rgw6ez7de rgw6ez7n6 rgw6ez554 rgw6ez5q4 rgw6ez1dy rgw6ez7d2",borderTopColor:i?"backgroundOutline":"transparent",children:[(0,s.jsxs)(ej.X2,{className:"rgw6ezcs rgw6ezay rgw6ezea rgw6ez4cg rgw6ez3sy",children:[a?(0,s.jsx)(eF.PH,{}):(0,s.jsx)(eF.HE,{}),(0,s.jsx)(eb.n,{children:`Price ${a?"increased":"decreased"} from ${(0,H.zb)(e.priceInfo.ETHPrice)} ETH`})]}),(0,s.jsx)(eb.n,{style:{marginLeft:"-8px",marginRight:"-8px"},children:(0,s.jsx)(e2,{asset:e,usdPrice:t,removeAsset:()=>void 0,isMobile:r})}),(0,s.jsxs)(ej.X2,{gap:"8",justifyContent:"space-between",children:[(0,s.jsx)(eQ,{onClick:o,emphasis:eS.eI.medium,size:eS.qE.small,children:"Remove"}),(0,s.jsx)(eQ,{onClick:d,emphasis:eS.eI.high,size:eS.qE.small,children:"Keep"})]})]})},e5=({assets:e})=>(0,s.jsx)(ej.sg,{display:"grid",style:{gridTemplateColumns:`repeat(${e.length}, 20px)`,width:`${32+(e.length-1)*20}px`},children:e.map((e,t)=>(0,s.jsx)(eb.n,{as:"img",src:e.smallImageUrl,width:"32",height:"32",borderStyle:"solid",borderWidth:"1px",borderColor:"backgroundSurface",borderRadius:"4",style:{zIndex:t},className:eY},`${e.address}-${e.tokenId}`))}),e3=({assets:e,usdPrice:t,clearUnavailableAssets:n,didOpenUnavailableAssets:i,setDidOpenUnavailableAssets:r,isMobile:a})=>{let[o,d]=(0,B.useReducer)(e=>!e,!1),[l,c]=(0,B.useState)(8);if((0,B.useEffect)(()=>{if(!l){i||(n(),r(!1));return}let e=setInterval(()=>{c(l-1)},1e3);return()=>clearInterval(e)},[l,n,i,r]),!e||0===e.length)return null;let u=e.length>1,p=o||!u;return(0,s.jsx)(ej.sg,{className:"rgw6ez2pa rgw6ez28s rgw6ezlm rgw6ezr4 rgw6ez4t4 rgw6ez3tm rgw6ez4em rgw6ez7de rgw6ez7n6 rgw6ez554 rgw6ez62a rgw6ez5q4 rgw6ez1dy",children:(0,s.jsxs)(ej.sg,{children:[(0,s.jsxs)(ej.X2,{justifyContent:"space-between",marginBottom:p?"12":"0",cursor:u?"pointer":"default",onClick:()=>{u&&(i||r(!0),d())},children:[(0,s.jsxs)(ej.X2,{gap:"12",color:"textSecondary",className:eW.Km,children:[!p&&(0,s.jsx)(e5,{assets:e.slice(0,5)}),"No longer available"]}),u&&(0,s.jsx)(ej.X2,{color:"textSecondary",children:o?(0,s.jsx)(eF.X_,{}):(0,s.jsx)(eF.Xs,{})}),!i&&(0,s.jsxs)(ej.X2,{position:"relative",width:"20",height:"20",color:"textPrimary",justifyContent:"center",cursor:"pointer",onClick:n,children:[(0,s.jsx)(eB,{}),(0,s.jsx)(eF.Nb,{})]})]}),(0,s.jsx)(ej.sg,{gap:"8",style:{marginLeft:"-8px",marginRight:"-8px"},children:p&&e.map(e=>(0,s.jsx)(e2,{asset:e,usdPrice:t,removeAsset:()=>void 0,grayscale:!0,isMobile:a},e.id))})]})})};var e9=n(34822);let e8=()=>{let e=(0,ek.cP)(e=>e.bagStatus),t=(0,ek.cP)(e=>e.setBagStatus),n=(0,ek.cP)(e=>e.markAssetAsReviewed),i=(0,ek.cP)(e=>e.didOpenUnavailableAssets),r=(0,ek.cP)(e=>e.setDidOpenUnavailableAssets),a=(0,ek.cP)(e=>e.itemsInBag),o=(0,ek.cP)(e=>e.setItemsInBag),d=(0,ek.cP)(e=>e.removeAssetsFromBag),u=(0,ek.dD)(),p=(0,B.useMemo)(()=>(0,H.G7)(a),[a]),{data:x}=(0,e9.useQuery)(["fetchPrice",{}],()=>(0,H.tw)(),{}),{unchangedAssets:g,priceChangedAssets:m,unavailableAssets:h,availableItems:f}=(0,B.useMemo)(()=>{let e=p.filter(e=>e.status===z.ZJ.ADDED_TO_BAG||e.status===z.ZJ.REVIEWED).map(e=>e.asset),t=p.filter(e=>e.status===z.ZJ.REVIEWING_PRICE_CHANGE).map(e=>e.asset),n=p.filter(e=>e.status===z.ZJ.UNAVAILABLE).map(e=>e.asset),i=p.filter(e=>e.status!==z.ZJ.UNAVAILABLE);return{unchangedAssets:e,priceChangedAssets:t,unavailableAssets:n,availableItems:i}},[p]);return(0,B.useEffect)(()=>{let n=m.length>0,i=p.length>0;n&&(0,c._P)(l.Yz.NFT_BUY_BAG_CHANGED,{usd_value:x,bag_quantity:p,...(0,H.Hj)(m)}),e!==z.s.IN_REVIEW||n||(i?t(z.s.CONFIRM_REVIEW):t(z.s.ADDING_TO_BAG)),e!==z.s.CONFIRM_REVIEW||i||t(z.s.ADDING_TO_BAG)},[e,p,m,t,x]),(0,s.jsxs)(s.Fragment,{children:[(0,s.jsxs)(ej.sg,{display:m.length>0||h.length>0?"flex":"none",children:[h.length>0&&(0,s.jsx)(c.fM,{name:l.Yz.NFT_BUY_BAG_CHANGED,properties:{usd_value:x,bag_quantity:p.length,...(0,H.Hj)(h)},shouldLogImpression:!0,children:(0,s.jsx)(e3,{assets:h,usdPrice:x,clearUnavailableAssets:()=>o(f),didOpenUnavailableAssets:i,setDidOpenUnavailableAssets:r,isMobile:u})}),m.map((e,t)=>(0,s.jsx)(e4,{asset:e,usdPrice:x,markAssetAsReviewed:n,top:0===t&&0===h.length,isMobile:u},e.id))]}),(0,s.jsx)(ej.sg,{children:g.slice(0).reverse().map(e=>(0,s.jsx)(e2,{asset:e,usdPrice:x,removeAsset:d,showRemove:!0,isMobile:u},e.id))})]})};var e7=n(62329);let te=(0,ee.default)(ea.oD).withConfig({displayName:"BagHeader__ClearButton",componentId:"sc-d761a2a3-0"})`
+  color: ${({theme:e})=>e.textSecondary};
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  :active {
+    text-decoration: none;
+  }
+`,tt=ee.default.button.withConfig({displayName:"BagHeader__IconWrapper",componentId:"sc-d761a2a3-1"})`
+  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  border: none;
+  color: ${({theme:e})=>e.textPrimary};
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 2px;
+  opacity: 1;
+
+  ${e7.c}
+`,tn=ee.default.div.withConfig({displayName:"BagHeader__CounterDot",componentId:"sc-d761a2a3-2"})`
+  align-items: center;
+  background-color: ${({theme:e})=>e.accentAction};
+  border-radius: 100px;
+  font-weight: bold;
+  color: ${({theme:e})=>e.accentTextLightPrimary};
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  min-width: ${({sizing:e})=>e};
+  min-height: ${({sizing:e})=>e};
+  padding: 4px 6px;
+`,ti=ee.default.div.withConfig({displayName:"BagHeader__Wrapper",componentId:"sc-d761a2a3-3"})`
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-start;
+  margin: 16px 28px;
+  text-align: center;
+`,tr=e=>{let t=e.toString().length;return`${14+6*t}px`},ta=({numberOfAssets:e,closeBag:t,resetFlow:n,isProfilePage:i})=>{let r=(0,B.useMemo)(()=>tr(e),[e]);return(0,s.jsxs)(ti,{children:[(0,s.jsx)(ea.Tv.HeadlineSmall,{children:i?(0,s.jsx)(d.cC,{id:"xNB0TS"}):(0,s.jsx)(d.cC,{id:"EnO7qf"})}),e>0&&(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)(tn,{sizing:r,children:e}),(0,s.jsx)(te,{onClick:n,children:(0,s.jsx)(d.cC,{id:"yYxB17"})})]}),(0,s.jsx)(tt,{onClick:t,children:(0,s.jsx)(eF.BW,{"data-testid":"nft-bag-close-icon"})})]})};var to=n(17669);let ts=(0,ee.default)(ej.sg).withConfig({displayName:"EmptyContent__StyledColumn",componentId:"sc-328ca12-0"})`
+  gap: 12px;
+  margin-top: 68px;
+`;var td=()=>{let e=(0,u.e5)();return(0,s.jsxs)(ts,{children:[(0,s.jsx)(ej.M5,{children:e?(0,s.jsx)(eF.JP,{color:to.Z4.colors.textTertiary}):(0,s.jsx)(eF.Ln,{color:to.Z4.colors.textTertiary,height:"96px",width:"96px",strokeWidth:"1px"})}),e?(0,s.jsx)(ej.M5,{"data-testid":"nft-no-nfts-selected",className:eW.v4,children:"No NFTs selected"}):(0,s.jsxs)(ej.sg,{gap:"16",children:[(0,s.jsx)(ej.M5,{"data-testid":"nft-empty-bag",className:eW.v4,style:{lineHeight:"24px"},children:"Your bag is empty"}),(0,s.jsx)(ej.M5,{fontSize:"12",fontWeight:"normal",color:"textSecondary",style:{lineHeight:"16px"},children:"Selected NFTs will appear here"})]})]})},tl=({asset:e})=>{let t=(0,ek.Pc)(e=>e.removeSellAsset),n=(0,ek.dD)(),[i,r]=(0,B.useState)(!1),a=()=>r(!i),o=n=>{n.preventDefault(),n.stopPropagation(),t(e)};return(0,s.jsxs)(ej.X2,{className:eZ,onMouseEnter:a,onMouseLeave:a,children:[(0,s.jsxs)(eb.n,{position:"relative",display:"flex",children:[n&&(0,s.jsx)(e1,{onClick:o}),(0,s.jsx)("img",{src:e.smallImageUrl,alt:e.name,className:eX})]}),(0,s.jsxs)(ej.sg,{overflow:"hidden",width:"full",color:"textPrimary",children:[(0,s.jsx)(ej.X2,{overflow:"hidden",width:"full",justifyContent:"space-between",whiteSpace:"nowrap",gap:"16",children:(0,s.jsx)(eb.n,{className:eV,children:e.name||`#${e.tokenId}`})}),(0,s.jsxs)(ej.X2,{overflow:"hidden",whiteSpace:"nowrap",gap:"2",children:[(0,s.jsx)(eb.n,{className:eq,children:e.asset_contract.name}),e.collectionIsVerified&&(0,s.jsx)(eF.SA,{className:eK})]})]}),i&&!n&&(0,s.jsx)(eJ,{onClick:o,emphasis:eS.eI.medium,size:eS.qE.medium,children:"Remove"})]})};let tc=()=>{let e=(0,ek.Pc)(e=>e.sellAssets);return(0,s.jsx)(ej.sg,{children:e.length?e.map((e,t)=>(0,s.jsx)(tl,{asset:e},t)):null})},tu=320,tp=360,tx=ee.default.div.withConfig({displayName:"Bag__BagContainer",componentId:"sc-1a600dfd-0"})`
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 88px;
+  right: 20px;
+  width: ${tu}px;
+  height: calc(100vh - 108px);
+  background: ${({theme:e})=>e.backgroundSurface};
+  border: 1px solid ${({theme:e})=>e.backgroundOutline};
+  border-radius: 16px;
+  box-shadow: ${({theme:e})=>e.shallowShadow};
+  z-index: ${({raiseZIndex:e,isProfilePage:t})=>e?t?eP.k.modalOverTooltip:eP.k.modalBackdrop-1:3};
+
+  @media only screen and (max-width: ${({theme:e})=>`${e.breakpoint.sm}px`}) {
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    border: none;
+  }
+
+  @media only screen and (min-width: ${({theme:e})=>`${e.breakpoint.xxxl}px`}) {
+    width: ${tp}px;
+  }
+`,tg=ee.default.div.withConfig({displayName:"Bag__DetailsPageBackground",componentId:"sc-1a600dfd-1"})`
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0px;
+  width: 100%;
+  height: 100%;
+`,tm=ee.default.div.withConfig({displayName:"Bag__ContinueButton",componentId:"sc-1a600dfd-2"})`
+  background: ${({theme:e})=>e.accentAction};
+  color: ${({theme:e})=>e.accentTextLightPrimary};
+  margin: 32px 28px 16px;
+  padding: 10px 0px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  transition: ${({theme:e})=>e.transition.duration.medium};
+
+  :hover {
+    opacity: ${({theme:e})=>e.opacity.hover};
+  }
+`,th=({top:e,show:t})=>(0,s.jsx)(eb.n,{marginX:"24",borderWidth:"1px",borderStyle:"solid",borderColor:"transparent",borderTopColor:e?"transparent":"backgroundOutline",borderBottomColor:e?"backgroundOutline":"transparent",opacity:t?"1":"0",transition:"250"});var tf=()=>{let{resetSellAssets:e,sellAssets:t}=(0,ek.Pc)(({reset:e,sellAssets:t})=>({resetSellAssets:e,sellAssets:t}),V.X),{setProfilePageState:n}=(0,ek.aO)(({setProfilePageState:e})=>({setProfilePageState:e})),{bagStatus:i,bagIsLocked:r,reset:a,bagExpanded:o,toggleBag:p,setBagExpanded:x}=(0,ek.cP)(e=>({...e,bagIsLocked:e.isLocked,uncheckedItemsInBag:e.itemsInBag}),V.X),{uncheckedItemsInBag:g}=(0,ek.cP)(({itemsInBag:e})=>({uncheckedItemsInBag:e})),m=(0,u.e5)(),h=(0,u._3)(),f=(0,u.GZ)(),I=(0,ek.dD)(),N=(0,B.useMemo)(()=>(0,H.G7)(g),[g]),[_,C]=(0,B.useState)(!1),{userCanScroll:T,scrollRef:A,scrollProgress:y,scrollHandler:E}=(0,ek.uh)(),w=(0,B.useCallback)(()=>{x({bagExpanded:!1,manualClose:!0})},[x]);(0,B.useEffect)(()=>{r&&!_&&C(!0)},[r,_]);let b=N.length>0,v=N.length>0,j=t.length>0,O=!!(!m&&!v&&i===z.s.ADDING_TO_BAG||m&&!j),k=(0,B.useMemo)(()=>({...(0,H.Hj)(N.map(e=>e.asset))}),[N]);return o&&f?(0,s.jsxs)(ev.h,{children:[(0,s.jsxs)(tx,{"data-testid":"nft-bag",raiseZIndex:I||_,isProfilePage:m,children:[(0,s.jsx)(ta,{numberOfAssets:m?t.length:N.length,closeBag:w,resetFlow:m?e:a,isProfilePage:m}),O&&(0,s.jsx)(td,{}),(0,s.jsx)(th,{top:!0,show:T&&y>0}),(0,s.jsx)(ej.sg,{ref:A,className:"_1jcz50r1 rgw6ez2em rgw6ez2k4 rgw6ez1yy rgw6ez7qu",onScroll:E,gap:"12",children:m?(0,s.jsx)(tc,{}):(0,s.jsx)(e8,{})}),b&&!m&&(0,s.jsx)(ew,{setModalIsOpen:C,eventProperties:k}),j&&m&&(0,s.jsx)(tm,{onClick:()=>{p(),n(z.HA.LISTING),(0,c._P)(l.Yz.NFT_PROFILE_PAGE_START_SELL,{list_quantity:t.length,collection_addresses:t.map(e=>e.asset_contract.address),token_ids:t.map(e=>e.tokenId)})},children:(0,s.jsx)(d.cC,{id:"xGVfLh"})})]}),h?(0,s.jsx)(tg,{onClick:p}):_&&(0,s.jsx)(eO.a,{onClick:()=>r?void 0:C(!1)})]}):null}}}]);
+//# sourceMappingURL=618.6b7fc61d.chunk.js.map
